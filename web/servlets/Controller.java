@@ -22,7 +22,6 @@ public class Controller extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
-        HttpSession session = request.getSession();
 
         String name = request.getParameter("name");
         String surname = request.getParameter("surname");

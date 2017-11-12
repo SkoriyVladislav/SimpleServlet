@@ -1,1 +1,2 @@
 insert into users (name, surname, phonenumber, `e-mail`) values ('Stev', 'Skoriy', '+375298586544', 'Skoriy.97@gmail.com');
+insert into users (name, surname, phonenumber, `e-mail`) values ('Stev', 'Skoriy', '+375298586544', 'Stev.97@gmail.com');

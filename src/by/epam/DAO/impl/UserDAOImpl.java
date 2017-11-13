@@ -22,7 +22,7 @@ public class UserDAOImpl implements UserDAO {
             Class.forName("com.mysql.jdbc.Driver");
         }
         catch (ClassNotFoundException e) {
-            System.out.println("No databbase");
+            System.out.println("No have databbase");
         }
 
         try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);

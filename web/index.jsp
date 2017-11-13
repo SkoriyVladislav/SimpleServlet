@@ -14,13 +14,12 @@
 <body>
     <br/>
 
-    <form action="ServletForJspElement" method="post">
-        <input type="hidden" name="command" value="naming" />
+    <form action="ServletForJspElement" method="post" >
         Введите имя:<br/>
-        <input type="text" name="name" value="" /><br />
+        <input type="text" name="name" value="" size="30" /><br /> <br />
         Введите фамилию:<br/>
-        <input type="text" name="surname" value="" /><br />
-        <input type="submit" value="Отправить" /><br />
+        <input type="text" name="surname" value="" size="30" /><br /> <br />
+        <input type="submit" value="Поиск" /><br />
     </form>
 
 </body>

@@ -13,7 +13,7 @@
     <title>Sessoin</title>
 </head>
 <body>
-    <table border="1" width="100%" cellpadding="5">
+    <table border="1" width="60%" cellpadding="5">
         <tr>
             <th>Name</th>
             <th>Surname</th>

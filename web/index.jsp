@@ -14,7 +14,7 @@
 <body>
     <br/>
 
-    <form action="ServletForJspElement" method="post" >
+    <form action="Controller" method="get" >
         Введите имя:<br/>
         <input type="text" name="name" value="" size="30" /><br /> <br />
         Введите фамилию:<br/>

@@ -14,13 +14,14 @@
     </welcome-file-list>
 
     <servlet>
-        <servlet-name>MyServlet</servlet-name>
+        <display-name>Controller</display-name>
+        <servlet-name>Controller</servlet-name>
         <servlet-class>servlets.Controller</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>MyServlet</servlet-name>
-        <url-pattern>/</url-pattern>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/Controller</url-pattern>
     </servlet-mapping>
 
     <resource-ref>

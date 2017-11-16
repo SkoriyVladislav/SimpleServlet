@@ -13,6 +13,9 @@
     <title>Sessoin</title>
 </head>
 <body>
+
+
+<c:if test="${!requestScope.users.isEmpty()}">
     <table border="1" width="60%" cellpadding="5">
         <tr>
             <th>Name</th>
@@ -20,15 +23,19 @@
             <th>Phone Number</th>
             <th>E-Mail</th>
         </tr>
-
         <c:forEach var="user" items="${requestScope.users}" >
-            <tr>
-                <td>${user.name}</td>
-                <td>${user.surname}</td>
-                <td>${user.phoneNumber}</td>
-                <td>${user.email}</td>
-            </tr>
+                <tr>
+                    <td><c:out value="${user.name}"/></td>
+                    <td><c:out value="${user.surname}"/></td>
+                    <td><c:out value="${user.phoneNumber}"/></td>
+                    <td><c:out value="${user.email}"/></td>
+                </tr>
         </c:forEach>
     </table>
+</c:if>
+
+<c:if test="${requestScope.users.isEmpty()}">
+    <c:out value="User is not in database"/>
+</c:if>
 </body>
 </html>

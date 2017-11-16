@@ -16,10 +16,6 @@ public class Controller extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
 
         String name = request.getParameter("name");
@@ -31,6 +27,11 @@ public class Controller extends HttpServlet {
 
         request.setAttribute("users", users);
         request.getRequestDispatcher("/WEB-INF/jsp/main.jsp").forward(request, response);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
     }
 
 
